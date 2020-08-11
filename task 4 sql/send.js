@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 });
   
 app.get('/users', function(req, res){
-  const sql = 'SELECT * FROM users ORDER BY average DESC;'
+  const sql = 'SELECT * FROM users ORDER BY average DESC , name ASC;'
   
   connection.query(sql, (err,rows,fileds) =>{
     if(err) throw err;
