@@ -1,7 +1,6 @@
 {
   "name": "task-3",
   "version": "1.0.0",
-  "description": "",
   "main": "send.js",
   "scripts": {
     "start": "node index",
@@ -16,5 +15,6 @@
     "nodemon": "^2.0.4",
     "path": "^0.12.7",
     "sort-array": "^4.1.1"
-  }
+  },
+  "description": ""
 }
