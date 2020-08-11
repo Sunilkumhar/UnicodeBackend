@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/displayheader.ejs") %>
+
+<body class="body">
+  <div class="container1" >
+
+    <% if (details.length > 0) { %>
+      <% details.forEach(std => { %>
+        <div class="eachuser" >
+          <h3 class="name">Name : <%= std.name %></h3>
+          <h3 class="maths">Maths : <%= std.maths %></h3>
+          <h3 class="english">English : <%= std.english %></h3>
+          <h3 class="maths" style="display: none;">Maths : <%= std.avg %></h3>
+        </div>
+
+      <% }) %>
+    <% } else { %>
+      <p style="font-size: 40px;width: 100%;margin-top: 15px;margin-left: 10px;">There are no users to display...</p>
+    <% } %>
+
+  </div>
+
+</body>
+</html>
