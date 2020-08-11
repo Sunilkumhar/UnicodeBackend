@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/displayheader.ejs") %>
+
+<body class="body">
+  <div class="container1">
+    <% if (items.length > 0) { %>
+      <% items.forEach(item => { %>
+        <div class="std">
+          <h2 class="name" >Name : <%= item.name %></h2>
+          <h2 class="english">Maths Score : <%= item.englishscore %></h2>
+          <h2 class="maths">English Score : <%= item.mathsscore %></h2>
+        </div>
+      <% }) %>
+    <% } else { %>
+      <h3 class="nouser" >There are no users to display...</h3>
+    <% } %>
+
+  </div>
+
+
+</body>
+</html>

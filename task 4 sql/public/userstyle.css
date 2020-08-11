@@ -1,0 +1,25 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgba(223, 244, 248, 0.822);
+}
+.container1{
+  margin-top: 30px;
+}
+.std{
+  padding-left: 10px;
+  padding-top: 2px;
+  border: solid 1px black;
+  width: 65%;
+  margin: auto;
+  margin-top: 15px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.nouser{
+  font-size: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
