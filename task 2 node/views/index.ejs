@@ -5,23 +5,28 @@
 <body>
   <%- include("./partials/body.ejs") %>
 
-  <div class="container" id="joke" style="border: solid;">
-    <% if (data.type === 'twopart' ) { %>
 
-      <h2>ID::  <%= data.id %></h2>
-      <h2>Category:: <%= data.category %></h2>
-      <h2>Type::  <%= data.type %></h2>
-      <h2>Setup::  <%= data.setup %></h2>
-      <h2>Delivery::  <%= data.delivery %></h2>
+  <div class="container" id="joke" >
+    <% data.forEach(data => { %>
+      <div id="showtwo">
+        <% if (data.type === 'twopart' ) { %>
 
-    <% } else { %>
+          <h2>ID::  <%= data.id %></h2>
+          <h2>Category:: <%= data.category %></h2>
+          <h2>Type::  <%= data.type %></h2>
+          <h2>Setup::  <%= data.setup %></h2>
+          <h2>Delivery::  <%= data.delivery %></h2>
 
-      <h2>ID:: <%= data.id %></h2>
-      <h2>Category:: <%= data.category %></h2>
-      <h2>Type:: <%= data.type %></h2>
-      <h2>Joke:: <%= data.joke %></h2>
+        <% } else { %>
 
-    <% } %>
+          <h2>ID:: <%= data.id %></h2>
+          <h2>Category:: <%= data.category %></h2>
+          <h2>Type:: <%= data.type %></h2>
+          <h2>Joke:: <%= data.joke %></h2>
+
+        <% } %>
+      </div>
+    <% }) %>
 
   </div>
 

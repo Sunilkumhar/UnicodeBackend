@@ -21,9 +21,9 @@ app.post('/', (req, res) => {
   type = req.body.type;
   // console.log(cat,type)
   
-  axios.get(`https://sv443.net/jokeapi/v2/joke/${cat}?type=${type}`)
+  axios.get(`https://sv443.net/jokeapi/v2/joke/${cat}?type=${type}&amount=2`)
   .then(function (response) {
-    res.render('index', { data: response.data});
+    res.render('index', { data: response.data.jokes});
   })
   .catch(function (error) {
     console.log(error); 
@@ -32,9 +32,10 @@ app.post('/', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  axios.get(`https://sv443.net/jokeapi/v2/joke/${cat}?type=${type}`)
+  axios.get(`https://sv443.net/jokeapi/v2/joke/${cat}?type=${type}&amount=2`)
   .then(function (response) {
-    res.render('index', { data: response.data});
+    console.log(response.data.jokes);
+    res.render('index', { data: response.data.jokes});
   })
   .catch(function (error) {
     console.log(error); 

@@ -84,5 +84,13 @@ header {
 
 #joke{
   margin-top: 5em;
+  
+}
+#showtwo {
+  border: solid; 
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px; 
   background-color:#f4f4f4;
 }
