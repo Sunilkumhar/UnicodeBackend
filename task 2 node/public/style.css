@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+	font-size: 1px;
+	font-weight:normal;
+	margin:0;
+}
+img{
+  height: 100vh;
+  width: 100%;
+  opacity: 0.2;
+  position: absolute;
+  background-repeat: repeat-y;
+
+}
+
+header {
+  background-color: aqua;
+  padding: 1rem;
+  text-align: center;
+}
+
+.Categaries{
+  text-align: center;
+  display:inline;
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.JokeType{
+  text-align: center;
+  display:inline;
+  margin-left: 60px;
+  padding: 10px;
+}
+
+.filter{
+  margin-left: 0.5em;
+}
+
+.container1{
+  width: 50%;
+  /* text-align: center; */
+  margin-left: 14em;
+  padding-top: 10px;
+  border-style: dashed;
+  padding-bottom: 15px;
+
+}
+.container1 .btn{
+  margin-left: 10rem;
+  width: 10em;
+  background-color: rgb(189, 182, 182);
+
+}
+
+.container1  .btn:hover{
+  background-color: rgb(111, 233, 117);
+}
+
+.container1  .btn:hover a{
+  text-decoration: none;
+}
+
+.container1 #optionsForCat{
+  margin: 10px;
+  margin-left: 5px;
+}
+.container1 #optionsForType{
+  margin: 10px;
+  margin-left: 5px;
+}
+
+
+.container1 .filter{
+  text-align: left;
+}
+
+#joke{
+  margin-top: 5em;
+  background-color:#f4f4f4;
+}
