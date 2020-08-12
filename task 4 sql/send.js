@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 });
   
 app.get('/users', function(req, res){
-  const sql = 'SELECT * FROM users ORDER BY average DESC , name ASC;'
+  const sql = 'SELECT * FROM user ORDER BY average DESC , name ASC'
   
   connection.query(sql, (err,rows,fileds) =>{
     if(err) throw err;
@@ -43,7 +43,7 @@ app.post('/users', function(req, res){
   // console.log(req.body);
   const avg = (parseInt(req.body.maths)+parseInt(req.body.english))/2;
   
-  var sql = "insert into users values(null,'"+req.body.name +"','"+req.body.maths +"','"+req.body.english +"',"+avg+")";
+  var sql = "insert into user values(null,'"+req.body.name +"','"+req.body.maths +"','"+req.body.english +"',"+avg+")";
   connection.query(sql, (err) =>{
     if(err) throw err;
     // console.log(123)
