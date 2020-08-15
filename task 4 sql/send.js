@@ -51,7 +51,8 @@ app.post('/users', function(req, res){
     
   })
   // connection.end();
-  res.status(204).send();
+  res.redirect('/users')
+  // res.status(204).send();
   
 });
 
